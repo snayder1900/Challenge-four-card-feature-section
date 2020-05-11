@@ -4,18 +4,25 @@ $breakpoints: (
     desktop: 1024px
 );
 // colors
-$colors: (
+:root {
     // primary
-    red: hsl(0,78%,62%),
-    cyan: hsl(180, 62%, 55%),
-    orange: hsl(34,97%,64%),
-    blue: hsl(212, 86%, 64%),
+    --color-primary-red: hsl(0,78%,62%);
+    --color-primary-cyan: hsl(180, 62%, 55%);
+    --color-primary-orange: hsl(34,97%,64%);
+    --color-primary-blue: hsl(212, 86%, 64%);
     // neutral
-    Very Dark Blue: hsl(234, 12%, 34%),
-    Grayish Blue: hsl(229, 6%, 66%),
-    Very Light Gray: hsl(0, 0%, 98%)
-);
+    --color-neutral-veryDarkBlue: hsl(234, 12%, 34%);
+    --color-neutral-GrayishBlue: hsl(229, 6%, 66%);
+    --color-neutral-veryLightGray: hsl(0, 0%, 98%);
+    //background 
+    --color-background: hsl(240, 5%, 95%);
+    //box-shadow
+    --color-boxShadow: hsl(240, 100%, 95%);
+}
+
 // typography
-$typography: (
-    font-size: 15px
-);
+:root {
+    --h1-font-size: 1.3rem;
+    --body-font-size: .9rem;
+    --small-font-size: .75rem;
+}
