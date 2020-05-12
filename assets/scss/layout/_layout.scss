@@ -6,10 +6,13 @@ body {
 //header
 .main-header {
     margin-bottom: 4rem;
+    margin-top: 3rem;
 
     @include mq(desktop) {
         margin-bottom: 0;
         margin-top: 4rem;
+        display: grid;
+        justify-items: center;
     }
 }
 .main-header__title {
@@ -17,6 +20,10 @@ body {
 }
 .main-header__text {
     text-align: center;
+
+    @include mq(desktop) {
+        width: 500px;
+    }
 }
 // main
 .main-section {
@@ -37,6 +44,14 @@ body {
     margin-bottom: 1.5rem;
     padding: 1rem;
     min-height: 240px;
+
+    @include mq(tablet) {
+        padding: 2.5rem;
+    }
+
+    @include mq(desktop) {
+        padding: 1rem;
+    }
 
     &:nth-child(1) {
         @include mq(desktop) {

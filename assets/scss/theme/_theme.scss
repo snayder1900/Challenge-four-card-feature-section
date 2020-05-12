@@ -12,7 +12,7 @@ body {
     color: var(--color-neutral-GrayishBlue);
 
     @include mq(desktop) {
-        font-size: var(--body-font-size);
+        font-size: var(--body-font-size );
     }
 }
 //main
@@ -39,6 +39,10 @@ body {
 .main-section__text {
     color: var(--color-neutral-GrayishBlue);
     font-size: var(--small-font-size);
+
+    @include mq(tablet) {
+        font-size: var(--body-font-size);
+    }
 
     @include mq(desktop) {
         font-size: var(--body-font-size);
