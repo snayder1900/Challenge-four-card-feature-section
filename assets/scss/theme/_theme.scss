@@ -10,6 +10,10 @@ body {
 }
 .main-header__text {
     color: var(--color-neutral-GrayishBlue);
+
+    @include mq(desktop) {
+        font-size: var(--body-font-size);
+    }
 }
 //main
 .l-section {
@@ -35,4 +39,8 @@ body {
 .main-section__text {
     color: var(--color-neutral-GrayishBlue);
     font-size: var(--small-font-size);
+
+    @include mq(desktop) {
+        font-size: var(--body-font-size);
+    }
 }
